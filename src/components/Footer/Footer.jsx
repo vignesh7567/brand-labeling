@@ -32,7 +32,7 @@ const Footer = () => {
                 <div className=' text-[16px] md:text-[24px] font-[600]'>COMPANY</div>
                 <div className=' flex flex-col gap-2 text-[14px] md:text-[20px]'>
                     <Link className=' cursor-pointer'>About Us</Link>
-                    <Link className=' cursor-pointer'>Imprint</Link>
+                    <Link to="imprint" className=' cursor-pointer'>Imprint</Link>
                 </div>
             </div>
             <div className='flex flex-col gap-2'>

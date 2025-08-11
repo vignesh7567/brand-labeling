@@ -31,7 +31,7 @@ const Home = () => {
       <div>
         <img src={brandLabellingImage} className=' w-full object-contain' />
       </div>
-      <div className='block md:hidden'>
+      <div className='block md:hidden pt-[36px]'>
         <ProductNavigator />
       </div>
       <ContactUs />
