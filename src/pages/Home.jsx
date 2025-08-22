@@ -10,6 +10,7 @@ import brandLabellingImage from '../assets/brand/brandLabelling.jpg'
 import OurProducts from '../components/Home/OurProducts'
 import ContactUs from '../components/Home/ContactUs'
 import Footer from '../components/Footer/Footer'
+import ProductNavigatorsm from '../utils/ProductNavigatorsm'
 
 const Home = () => {
   return (
@@ -32,7 +33,7 @@ const Home = () => {
         <img src={brandLabellingImage} className=' w-full object-contain' />
       </div>
       <div className='block md:hidden pt-[36px]'>
-        <ProductNavigator />
+        <ProductNavigatorsm />
       </div>
       <ContactUs />
       <Footer />
