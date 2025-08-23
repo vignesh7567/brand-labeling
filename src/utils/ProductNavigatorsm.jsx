@@ -11,13 +11,13 @@ import tshirt from '../assets/home/popImages/tshirt.jpg'
 import socks from '../assets/home/popImages/socks.jpg'
 
 const dots = [
-    { top: '6%', left: '18%', title: 'Benies', image: benies, redirectUrl: '/imprint' },
-    { top: '26%', left: '45%', title: 'T-Shirt', image: tshirt, redirectUrl: '/imprint' },
-    { top: '18%', left: '76%', title: 'Bag', image: bag, redirectUrl: '/imprint' },
-    { top: '25%', left: '87%', title: 'Shirt', image: shirt, redirectUrl: '/imprint' },
-    { top: '66%', left: '12%', title: 'Socks', image: socks, redirectUrl: '/imprint' },
-    { top: '66%', left: '44%', title: 'Pant', image: pant, redirectUrl: '/imprint' },
-    { top: '76%', left: '80%', title: 'Cap', image: cap, redirectUrl: '/imprint' }
+    { top: '6%', left: '18%', title: 'Benies', image: benies, redirectUrl: 'benies' },
+    { top: '26%', left: '45%', title: 'T-Shirt', image: tshirt, redirectUrl: 'tshirt' },
+    { top: '18%', left: '76%', title: 'Bag', image: bag, redirectUrl: 'bag' },
+    { top: '25%', left: '87%', title: 'Shirt', image: shirt, redirectUrl: 'shirt' },
+    { top: '66%', left: '12%', title: 'Socks', image: socks, redirectUrl: 'socks' },
+    { top: '66%', left: '44%', title: 'Pant', image: pant, redirectUrl: 'pant' },
+    { top: '76%', left: '80%', title: 'Cap', image: cap, redirectUrl: 'cap' }
 ]
 
 const ProductNavigatorsm = () => {
@@ -34,7 +34,7 @@ const ProductNavigatorsm = () => {
           style={{ top: dot.top, left: dot.left, transform: 'translate(-50%, -50%)' }}
           onMouseEnter={() => setHoveredIdx(idx)}
           onMouseLeave={() => setHoveredIdx(null)}
-          onClick={() => navigate(dot.redirectUrl)}
+          onClick={() => navigate(`/productDetails/${dot.redirectUrl}`)}
         >
             {/* Middle white */}
             <span className="block w-4 h-4 bg-white rounded-full flex items-center justify-center border-2 border-black">

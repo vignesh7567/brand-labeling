@@ -11,14 +11,14 @@ import tshirt from '../assets/home/popImages/tshirt.jpg'
 import socks from '../assets/home/popImages/socks.jpg'
 
 const dots = [
-  { top: '30%', left: '16%', title: 'T-Shirt', image: tshirt, redirectUrl: '/imprint' },
-  { top: '12%', left: '41%', title: 'Pant', image: pant, redirectUrl: '/imprint' },
-  { top: '20%', left: '66.5%', title: 'Shirt', image: shirt, redirectUrl: '/imprint' },
-  { top: '40%', left: '89%', title: 'Socks', image: socks, redirectUrl: '/imprint' },
-  { top: '67%', left: '12%', title: 'Cap', image: cap, redirectUrl: '/imprint' },
-  { top: '60%', left: '40%', title: 'Benies', image: benies, redirectUrl: '/imprint' },
-  { top: '78%', left: '73%', title: 'Bag', image: bag, redirectUrl: '/imprint' },
-  { top: '84%', left: '93%', title: 'T-Shirt', image: tshirt, redirectUrl: '/imprint' },
+  { top: '30%', left: '16%', title: 'T-Shirt', image: tshirt, redirectUrl: 'tshirt' },
+  { top: '12%', left: '41%', title: 'Pant', image: pant, redirectUrl: 'pant' },
+  { top: '20%', left: '66.5%', title: 'Shirt', image: shirt, redirectUrl: 'shirt' },
+  { top: '40%', left: '89%', title: 'Socks', image: socks, redirectUrl: 'socks' },
+  { top: '67%', left: '12%', title: 'Cap', image: cap, redirectUrl: 'cap' },
+  { top: '60%', left: '40%', title: 'Benies', image: benies, redirectUrl: 'benies' },
+  { top: '78%', left: '73%', title: 'Bag', image: bag, redirectUrl: 'bag' },
+  { top: '84%', left: '93%', title: 'T-Shirt', image: tshirt, redirectUrl: 'tshirt' },
 ]
 
 const ProductNavigator = () => {
@@ -35,7 +35,7 @@ const ProductNavigator = () => {
           style={{ top: dot.top, left: dot.left, transform: 'translate(-50%, -50%)' }}
           onMouseEnter={() => setHoveredIdx(idx)}
           onMouseLeave={() => setHoveredIdx(null)}
-          onClick={() => navigate(dot.redirectUrl)}
+          onClick={() => navigate(`/productDetails/${dot.redirectUrl}`)}
         >
           {/* Outer black */}
           <span className="block w-8 h-8 bg-black rounded-full flex items-center justify-center">

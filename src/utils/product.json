@@ -1,0 +1,65 @@
+{
+    "pant": {
+        "id": 1,
+        "name": "ABSTRACT PRINT PANTS",
+        "price": 99,
+        "description": "SINGLE JERSEY 100% COMBED RING-SPUN ORGANIC COTTON,PRE-WASHED.",
+        "colors": ["#D9D9D9", "#A9A9A9", "#1E1E1E", "#A6D6CA", "#FFFFFF", "#B9C1E8"],
+        "sizes": ["XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"],
+        "image": ["pant1", "pant2", "pant3", "pant4", "pant5"]
+    },
+    "shirt": {
+        "id": 2,
+        "name": "ABSTRACT PRINT SHIRT",
+        "price": 99,
+        "description": "SINGLE JERSEY 100% COMBED RING-SPUN ORGANIC COTTON,PRE-WASHED.",
+        "colors": ["#D9D9D9", "#A9A9A9", "#1E1E1E", "#A6D6CA", "#FFFFFF", "#B9C1E8"],
+        "sizes": ["XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"],
+        "image": ["shirt1", "shirt2", "shirt3", "shirt4", "shirt5"]
+    },
+    "tshirt": {
+        "id": 3,
+        "name": "ABSTRACT PRINT TSHIRT",
+        "price": 99,
+        "description": "SINGLE JERSEY 100% COMBED RING-SPUN ORGANIC COTTON,PRE-WASHED.",
+        "colors": ["#D9D9D9", "#A9A9A9", "#1E1E1E", "#A6D6CA", "#FFFFFF", "#B9C1E8"],
+        "sizes": ["XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"],
+        "image": ["tshirt1", "tshirt2", "tshirt3", "tshirt4", "tshirt5"]
+    },
+    "cap": {
+        "id": 4,
+        "name": "ABSTRACT PRINT CAP",
+        "price": 99,
+        "description": "SINGLE JERSEY 100% COMBED RING-SPUN ORGANIC COTTON,PRE-WASHED.",
+        "colors": ["#D9D9D9", "#A9A9A9", "#1E1E1E", "#A6D6CA", "#FFFFFF", "#B9C1E8"],
+        "sizes": ["XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"],
+        "image": ["cap1", "cap2", "cap3", "cap4", "cap5"]
+    },
+    "benies": {
+        "id": 5,
+        "name": "ABSTRACT PRINT BENIES",
+        "price": 99,
+        "description": "SINGLE JERSEY 100% COMBED RING-SPUN ORGANIC COTTON,PRE-WASHED.",
+        "colors": ["#D9D9D9", "#A9A9A9", "#1E1E1E", "#A6D6CA", "#FFFFFF", "#B9C1E8"],
+        "sizes": ["XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"],
+        "image": ["benies1", "benies2", "benies3", "benies4", "benies5"]
+    },
+    "bag": {
+        "id": 6,
+        "name": "ABSTRACT PRINT BAG",
+        "price": 99,
+        "description": "SINGLE JERSEY 100% COMBED RING-SPUN ORGANIC COTTON,PRE-WASHED.",
+        "colors": ["#D9D9D9", "#A9A9A9", "#1E1E1E", "#A6D6CA", "#FFFFFF", "#B9C1E8"],
+        "sizes": ["XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"],
+        "image": ["bag1", "bag2", "bag3", "bag4", "bag5"]
+    },
+    "socks": {
+        "id": 7,
+        "name": "ABSTRACT PRINT SOCKS",
+        "price": 99,
+        "description": "SINGLE JERSEY 100% COMBED RING-SPUN ORGANIC COTTON,PRE-WASHED.",
+        "colors": ["#D9D9D9", "#A9A9A9", "#1E1E1E", "#A6D6CA", "#FFFFFF", "#B9C1E8"],
+        "sizes": ["XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"],
+        "image": ["socks1", "socks2", "socks3", "socks4", "socks5"]
+    }
+}
