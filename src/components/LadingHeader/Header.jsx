@@ -82,7 +82,10 @@ const Header = () => {
           />
         )}
         {showSearch && (
-          <div className=' flex bg-white rounded-2xl border border-gray-300'>
+          <div className={`flex bg-white rounded-2xl border border-gray-300 transition-all duration-75 ease-in-out
+            ${showSearch ? 'translate-x-0 opacity-100 w-[200px] md:w-[300px]' : 'translate-x-full opacity-0 w-0'}
+            overflow-hidden`}
+          >
             <input
               ref={inputRef}
               type="text"
