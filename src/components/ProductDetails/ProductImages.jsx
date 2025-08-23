@@ -44,7 +44,7 @@ const imageMap = {
   "socks5": tshirt5
 };
 
-const ProductImages = ({ images }) => {
+const ProductImages = ({ images, onImageLoad }) => {
     const [selected, setSelected] = useState(0);
     return (
     <div className=" flex justify-between items-center gap-6">
@@ -54,6 +54,7 @@ const ProductImages = ({ images }) => {
                 src={imageMap[images[selected]]}
                 alt={images[selected]}
                 className=" w-[100%] h-[400px] md:h-[500px] border-2 border-gray-300 object-contain"
+                onLoad={onImageLoad}
             />
         </div>
         {/* Thumbnails */}
@@ -66,6 +67,7 @@ const ProductImages = ({ images }) => {
                 className={`w-[62px] h-[75px] object-cover cursor-pointer rounded 
                 ${selected === idx ? 'border-2 border-white' : 'border-2 border-gray-400 opacity-70'}`}
                 onClick={() => setSelected(idx)}
+                onLoad={onImageLoad}
             />
             ))}
         </div>
