@@ -54,7 +54,7 @@ const ProductImages = ({ images, onImageLoad }) => {
                 src={imageMap[images[selected]]}
                 alt={images[selected]}
                 className=" w-[100%] h-[400px] md:h-[500px] border-2 border-gray-300 object-contain"
-                onLoad={onImageLoad}
+                onLoad={() => onImageLoad(images[selected])}
             />
         </div>
         {/* Thumbnails */}
@@ -67,7 +67,7 @@ const ProductImages = ({ images, onImageLoad }) => {
                 className={`w-[62px] h-[75px] object-cover cursor-pointer rounded 
                 ${selected === idx ? 'border-2 border-white' : 'border-2 border-gray-400 opacity-70'}`}
                 onClick={() => setSelected(idx)}
-                onLoad={onImageLoad}
+                onLoad={() => onImageLoad(img)}
             />
             ))}
         </div>

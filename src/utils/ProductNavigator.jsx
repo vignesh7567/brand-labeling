@@ -21,13 +21,13 @@ const dots = [
   { top: '84%', left: '93%', title: 'T-Shirt', image: tshirt, redirectUrl: 'tshirt' },
 ]
 
-const ProductNavigator = () => {
+const ProductNavigator = ({onImageLoad}) => {
   const [hoveredIdx, setHoveredIdx] = useState(null)
   const navigate = useNavigate()
 
   return (
     <div className='w-full relative'>
-      <img src={productNavigatorImage} className='w-full object-cover' />
+      <img src={productNavigatorImage} className='w-full object-cover' onLoad={onImageLoad} />
       {dots.map((dot, idx) => (
         <div
           key={idx}

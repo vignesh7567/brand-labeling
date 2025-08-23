@@ -16,6 +16,10 @@ export const router = createBrowserRouter([
         path: "productDetails/:id", // Route with parameter
         element: <ProductDetails />,
     },
+    {
+        path: "*",
+        element: <Home />,
+    }
 ])
 
 export default router;
