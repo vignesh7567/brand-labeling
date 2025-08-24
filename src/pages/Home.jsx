@@ -52,6 +52,9 @@ const Home = () => {
       )}
       <ScrollLabel />
       <Header />
+      <div className='block md:hidden'>
+        <ProductNavigatorsm />
+      </div>
       <div className='hidden md:block'>
         <ProductNavigator onImageLoad={handleImageLoad} />
       </div>
@@ -65,9 +68,6 @@ const Home = () => {
       <OurProducts />
       <div>
         <img src={brandLabellingImage} className=' w-full object-contain' />
-      </div>
-      <div className='block md:hidden pt-[36px]'>
-        <ProductNavigatorsm />
       </div>
       <ContactUs />
       <Footer />
