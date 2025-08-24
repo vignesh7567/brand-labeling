@@ -5,6 +5,36 @@ import tshirt2 from '../../assets/productDetails/tshirt/image2.jpg';
 import tshirt3 from '../../assets/productDetails/tshirt/image3.jpg';
 import tshirt4 from '../../assets/productDetails/tshirt/image4.jpg';
 import tshirt5 from '../../assets/productDetails/tshirt/image5.jpg';
+import shirt1 from '../../assets/productDetails/shirt/image1.jpg';
+import shirt2 from '../../assets/productDetails/shirt/image2.jpg';
+import shirt3 from '../../assets/productDetails/shirt/image3.jpg';
+import shirt4 from '../../assets/productDetails/shirt/image4.jpg';
+import shirt5 from '../../assets/productDetails/shirt/image5.jpg';
+import pant1 from '../../assets/productDetails/pant/image1.jpg';
+import pant2 from '../../assets/productDetails/pant/image2.jpg';
+import pant3 from '../../assets/productDetails/pant/image3.jpg';
+import pant4 from '../../assets/productDetails/pant/image4.jpg';
+import pant5 from '../../assets/productDetails/pant/image5.jpg';
+import cap1 from '../../assets/productDetails/cap/image1.jpg';
+import cap2 from '../../assets/productDetails/cap/image2.jpg';
+import cap3 from '../../assets/productDetails/cap/image3.jpg';
+import cap4 from '../../assets/productDetails/cap/image4.jpg';
+import cap5 from '../../assets/productDetails/cap/image5.jpg';
+import benies1 from '../../assets/productDetails/benies/image1.jpg';
+import benies2 from '../../assets/productDetails/benies/image2.jpg';
+import benies3 from '../../assets/productDetails/benies/image3.jpg';
+import benies4 from '../../assets/productDetails/benies/image4.jpg';
+import benies5 from '../../assets/productDetails/benies/image5.jpg';
+import bag1 from '../../assets/productDetails/bag/image1.jpg';
+import bag2 from '../../assets/productDetails/bag/image2.jpg';
+import bag3 from '../../assets/productDetails/bag/image3.jpg';
+import bag4 from '../../assets/productDetails/bag/image4.jpg';
+import bag5 from '../../assets/productDetails/bag/image5.jpg';
+import socks1 from '../../assets/productDetails/socks/image1.png';
+import socks2 from '../../assets/productDetails/socks/image2.jpg';
+import socks3 from '../../assets/productDetails/socks/image3.jpg';
+import socks4 from '../../assets/productDetails/socks/image4.jpg';
+import socks5 from '../../assets/productDetails/socks/image5.jpg';
 
 const imageMap = {
   "tshirt1": tshirt1, 
@@ -12,36 +42,36 @@ const imageMap = {
   "tshirt3": tshirt3, 
   "tshirt4": tshirt4, 
   "tshirt5": tshirt5,
-  "shirt1": tshirt1, 
-  "shirt2": tshirt2, 
-  "shirt3": tshirt3, 
-  "shirt4": tshirt4, 
-  "shirt5": tshirt5,
-  "pant1": tshirt1, 
-  "pant2": tshirt2, 
-  "pant3": tshirt3, 
-  "pant4": tshirt4, 
-  "pant5": tshirt5,
-  "cap1": tshirt1, 
-  "cap2": tshirt2, 
-  "cap3": tshirt3, 
-  "cap4": tshirt4, 
-  "cap5": tshirt5,
-  "benies1": tshirt1, 
-  "benies2": tshirt2, 
-  "benies3": tshirt3, 
-  "benies4": tshirt4, 
-  "benies5": tshirt5,
-  "bag1": tshirt1, 
-  "bag2": tshirt2, 
-  "bag3": tshirt3, 
-  "bag4": tshirt4, 
-  "bag5": tshirt5,
-  "socks1": tshirt1, 
-  "socks2": tshirt2, 
-  "socks3": tshirt3, 
-  "socks4": tshirt4, 
-  "socks5": tshirt5
+  "shirt1": shirt1, 
+  "shirt2": shirt2, 
+  "shirt3": shirt3, 
+  "shirt4": shirt4, 
+  "shirt5": shirt5,
+  "pant1": pant1, 
+  "pant2": pant2, 
+  "pant3": pant3, 
+  "pant4": pant4, 
+  "pant5": pant5,
+  "cap1": cap1, 
+  "cap2": cap2, 
+  "cap3": cap3, 
+  "cap4": cap4, 
+  "cap5": cap5,
+  "benies1": benies1, 
+  "benies2": benies2, 
+  "benies3": benies3, 
+  "benies4": benies4, 
+  "benies5": benies5,
+  "bag1": bag1, 
+  "bag2": bag2, 
+  "bag3": bag3, 
+  "bag4": bag4, 
+  "bag5": bag5,
+  "socks1": socks1, 
+  "socks2": socks2, 
+  "socks3": socks3, 
+  "socks4": socks4, 
+  "socks5": socks5
 };
 
 const ProductImages = ({ images, onImageLoad }) => {
@@ -53,7 +83,7 @@ const ProductImages = ({ images, onImageLoad }) => {
             <img
                 src={imageMap[images[selected]]}
                 alt={images[selected]}
-                className=" w-[100%] h-[400px] md:h-[500px] border-2 border-gray-300 object-contain"
+                className=" w-[100%] h-[400px] md:h-[500px] border-2 border-gray-300 object-cover"
                 onLoad={() => onImageLoad(images[selected])}
             />
         </div>

@@ -24,59 +24,40 @@ const Home = () => {
     <div className=' flex flex-col'>
       {loadedImages < TOTAL_IMAGES && (
         <div className="flex flex-col items-center justify-center h-screen w-screen bg-white z-50 fixed top-0 left-0">
-          {/* Hanger SVG spinning */}
-          <svg
-            className="animate-spin-slow mb-6 drop-shadow-lg"
-            width="80"
-            height="80"
-            viewBox="0 0 64 64"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            style={{ color: "#2563eb" }} // Tailwind blue-600
-          >
-            <path
-              d="M32 8C32 13 40 13 40 18C40 21.5 36 22 32 28"
-              stroke="currentColor"
-              strokeWidth="3"
-              strokeLinecap="round"
-              fill="none"
-            />
-            <path
-              d="M32 28L12 52H52L32 28Z"
-              stroke="currentColor"
-              strokeWidth="3"
-              fill="none"
-            />
-            <circle
-              cx="32"
-              cy="8"
-              r="3"
-              fill="currentColor"
-            />
-          </svg>
-          <div className="text-xl font-semibold text-blue-600 tracking-wide mb-2 animate-pulse">
-            Loading Your Style...
+          {/* Animated clothes tags */}
+          <div className="flex gap-3 mb-6">
+            <div className="w-5 h-10 bg-blue-500 rounded-md animate-bounce [animation-delay:0ms] shadow-lg"></div>
+            <div className="w-5 h-10 bg-blue-400 rounded-md animate-bounce [animation-delay:200ms] shadow-lg"></div>
+            <div className="w-5 h-10 bg-blue-300 rounded-md animate-bounce [animation-delay:400ms] shadow-lg"></div>
           </div>
-          <div className="text-blue-400 text-sm">Please wait while we dress up your experience</div>
+          <div className="text-xl font-semibold text-blue-500 tracking-wide mb-2 animate-pulse">
+            Dressing up your experience...
+          </div>
+          <div className="text-blue-400 text-sm">Please wait while we prepare your style</div>
           <style>
             {`
-              .animate-spin-slow {
-                animation: spin 1.8s linear infinite;
+              .animate-bounce {
+                animation: bounce 1.2s infinite;
               }
-              @keyframes spin {
-                100% { transform: rotate(360deg); }
+              @keyframes bounce {
+                0%, 100% { transform: translateY(0);}
+                50% { transform: translateY(-24px);}
               }
+              .[animation-delay\\:200ms] { animation-delay: 0.2s; }
+              .[animation-delay\\:400ms] { animation-delay: 0.4s; }
             `}
           </style>
         </div>
       )}
       <ScrollLabel />
       <Header />
-      <HomeMobile1 onImageLoad={handleImageLoad} />
       <div className='hidden md:block'>
         <ProductNavigator onImageLoad={handleImageLoad} />
       </div>
-      <div className=' hidden md:block'>
+      <div className='block md:hidden'>
+        <ProductNavigatorsm onImageLoad={handleImageLoad} />
+      </div>
+      <div className='block'>
         <img src={image1} className=' w-full object-contain' onLoad={handleImageLoad} />
       </div>
       <div>
