@@ -12,14 +12,15 @@ import ContactUs from '../components/Home/ContactUs'
 import Footer from '../components/Footer/Footer'
 import ProductNavigatorsm from '../utils/ProductNavigatorsm'
 
-const TOTAL_IMAGES = 5;
+const TOTAL_IMAGES = 4;
 
 const Home = () => {
   const [loadedImages, setLoadedImages] = useState(0);
 
   // Handler for all images
   const handleImageLoad = () => setLoadedImages(count => count + 1);
-
+  console.log(loadedImages, TOTAL_IMAGES);
+  
   return (
     <div className=' flex flex-col'>
       {loadedImages < TOTAL_IMAGES && (
