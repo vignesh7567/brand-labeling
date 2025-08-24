@@ -54,9 +54,6 @@ const Home = () => {
       <div className='hidden md:block'>
         <ProductNavigator onImageLoad={handleImageLoad} />
       </div>
-      <div className='block md:hidden'>
-        <ProductNavigatorsm onImageLoad={handleImageLoad} />
-      </div>
       <div className='block'>
         <img src={image1} className=' w-full object-contain' onLoad={handleImageLoad} />
       </div>
