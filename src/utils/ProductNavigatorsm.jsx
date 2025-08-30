@@ -3,12 +3,12 @@ import { useNavigate } from 'react-router-dom'
 import productNavigatorImage from '../assets/home/homebg111.jpg'
 
 import bag from '../assets/home/popImages/bag.jpg'
-import benies from '../assets/home/popImages/benies.jpg'
+import benies from '../assets/home/popImages/benies1.jpg'
 import cap from '../assets/home/popImages/cap.jpg'
 import pant from '../assets/home/popImages/pant.jpg'
 import shirt from '../assets/home/popImages/shirt.jpg'
-import tshirt from '../assets/home/popImages/tshirt.jpg'
-import socks from '../assets/home/popImages/socks.jpg'
+import tshirt from '../assets/home/popImages/tshirt1.jpg'
+import socks from '../assets/home/popImages/socks1.jpg'
 
 const dots = [
   { top: '8.7%', left: '12.6%', title: 'Cap', image: cap, redirectUrl: 'cap' },
