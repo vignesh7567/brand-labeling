@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import productNavigatorImage from '../assets/home/homebg11.jpg'
+import productNavigatorImage from '../assets/home/homebg111.jpg'
 
 import bag from '../assets/home/popImages/bag.jpg'
 import benies from '../assets/home/popImages/benies.jpg'
@@ -11,13 +11,14 @@ import tshirt from '../assets/home/popImages/tshirt.jpg'
 import socks from '../assets/home/popImages/socks.jpg'
 
 const dots = [
-    { top: '6%', left: '18%', title: 'Benies', image: benies, redirectUrl: 'benies' },
-    { top: '26%', left: '45%', title: 'T-Shirt', image: tshirt, redirectUrl: 'tshirt' },
-    { top: '18%', left: '76%', title: 'Bag', image: bag, redirectUrl: 'bag' },
-    { top: '25%', left: '87%', title: 'Shirt', image: shirt, redirectUrl: 'shirt' },
-    { top: '66%', left: '12%', title: 'Socks', image: socks, redirectUrl: 'socks' },
-    { top: '66%', left: '44%', title: 'Pant', image: pant, redirectUrl: 'pant' },
-    { top: '76%', left: '80%', title: 'Cap', image: cap, redirectUrl: 'cap' }
+  { top: '8.7%', left: '12.6%', title: 'Cap', image: cap, redirectUrl: 'cap' },
+  { top: '25.5%', left: '36.5%', title: 'T-Shirt', image: tshirt, redirectUrl: 'tshirt' },
+  { top: '10%', left: '63.5%', title: 'Benies', image: benies, redirectUrl: 'benies' },
+  { top: '26.6%', left: '89%', title: 'Pant', image: pant, redirectUrl: 'pant' },
+  { top: '78.5%', left: '17.4%', title: 'Socks', image: socks, redirectUrl: 'socks' },
+  { top: '74.5%', left: '47.15%', title: 'Bag', image: bag, redirectUrl: 'bag' },
+  { top: '73.35%', left: '64.45%', title: 'Shirt', image: shirt, redirectUrl: 'shirt' },
+  { top: '71.1%', left: '88.73%', title: 'T-Shirt', image: tshirt, redirectUrl: 'tshirt' },
 ]
 
 const ProductNavigatorsm = ({onImageLoad}) => {
@@ -61,7 +62,7 @@ const ProductNavigatorsm = ({onImageLoad}) => {
           {activeIdx === idx && (
             <div
               ref={popupRef}
-              className={`absolute ${idx === 2 || idx === 3 || idx === 6 ? 'right-0' : 'left-0'} top-0 z-100 bg-white border border-gray-300 rounded shadow-lg flex flex-col items-center gap-2 min-w-[100px] p-0.5 md:p-2`}
+              className={`absolute ${idx === 3 || idx === 7 ? 'right-0' : 'left-0'} top-0 z-100 bg-white border border-gray-300 rounded shadow-lg flex flex-col items-center gap-2 min-w-[100px] p-0.5 md:p-2`}
               onClick={() => navigate(`/productDetails/${dot.redirectUrl}`)}
             >
               <img src={dot.image} alt={dot.title} className="w-full object-cover rounded" />

@@ -5,7 +5,6 @@ import ProductNavigator from '../utils/ProductNavigator'
 import image1 from '../assets/home/homebg2.jpg'
 import image2 from '../assets/home/homebg3.jpg'
 import image2mb from '../assets/home/homebg3mb.jpg'
-import HomeMobile1 from '../components/Home/HomeMobile1'
 import brandLabellingImage from '../assets/brand/brandLabelling.jpg'
 import OurProducts from '../components/Home/OurProducts'
 import ContactUs from '../components/Home/ContactUs'
@@ -53,7 +52,7 @@ const Home = () => {
       <ScrollLabel />
       <Header />
       <div className='block md:hidden'>
-        <ProductNavigatorsm />
+        <ProductNavigatorsm onImageLoad={handleImageLoad} />
       </div>
       <div className='hidden md:block'>
         <ProductNavigator onImageLoad={handleImageLoad} />

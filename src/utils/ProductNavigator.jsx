@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import productNavigatorImage from '../assets/home/homebg1enhanced.jpg'
+import productNavigatorImage from '../assets/home/homebg111.jpg'
 
 import bag from '../assets/home/popImages/bag.jpg'
 import benies from '../assets/home/popImages/benies.jpg'
@@ -11,14 +11,14 @@ import tshirt from '../assets/home/popImages/tshirt.jpg'
 import socks from '../assets/home/popImages/socks.jpg'
 
 const dots = [
-  { top: '30%', left: '16%', title: 'T-Shirt', image: tshirt, redirectUrl: 'tshirt' },
-  { top: '12%', left: '41%', title: 'Pant', image: pant, redirectUrl: 'pant' },
-  { top: '20%', left: '66.5%', title: 'Shirt', image: shirt, redirectUrl: 'shirt' },
-  { top: '40%', left: '89%', title: 'Socks', image: socks, redirectUrl: 'socks' },
-  { top: '67%', left: '12%', title: 'Cap', image: cap, redirectUrl: 'cap' },
-  { top: '60%', left: '40%', title: 'Benies', image: benies, redirectUrl: 'benies' },
-  { top: '78%', left: '73%', title: 'Bag', image: bag, redirectUrl: 'bag' },
-  { top: '84%', left: '93%', title: 'T-Shirt', image: tshirt, redirectUrl: 'tshirt' },
+  { top: '8.7%', left: '12.6%', title: 'Cap', image: cap, redirectUrl: 'cap' },
+  { top: '25.5%', left: '36.5%', title: 'T-Shirt', image: tshirt, redirectUrl: 'tshirt' },
+  { top: '10%', left: '63.5%', title: 'Benies', image: benies, redirectUrl: 'benies' },
+  { top: '26.6%', left: '89%', title: 'Pant', image: pant, redirectUrl: 'pant' },
+  { top: '78.5%', left: '17.4%', title: 'Socks', image: socks, redirectUrl: 'socks' },
+  { top: '74.5%', left: '47.15%', title: 'Bag', image: bag, redirectUrl: 'bag' },
+  { top: '73.35%', left: '64.45%', title: 'Shirt', image: shirt, redirectUrl: 'shirt' },
+  { top: '71.1%', left: '88.73%', title: 'T-Shirt', image: tshirt, redirectUrl: 'tshirt' },
 ]
 
 const ProductNavigator = ({onImageLoad}) => {
@@ -38,11 +38,11 @@ const ProductNavigator = ({onImageLoad}) => {
           onClick={() => navigate(`/productDetails/${dot.redirectUrl}`)}
         >
           {/* Outer black */}
-          <span className="block w-8 h-8 bg-black rounded-full flex items-center justify-center">
+          <span className="block w-4.5 md:w-13 h-4.5 md:h-13 bg-black rounded-full flex items-center justify-center">
             {/* Middle white */}
-            <span className="block w-6 h-6 bg-white rounded-full flex items-center justify-center border-2 border-black">
+            <span className="block w-4 md:w-12 h-4 md:h-12 bg-white rounded-full flex items-center justify-center border-2 border-black">
               {/* Center black */}
-              <span className="block w-3 h-3 bg-black rounded-full"></span>
+              <span className="block w-2 md:w-7 h-2 md:h-7 bg-black rounded-full"></span>
             </span>
           </span>
           {/* Tooltip */}
