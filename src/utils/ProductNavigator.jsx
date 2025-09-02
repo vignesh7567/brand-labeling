@@ -9,6 +9,7 @@ import pant from '../assets/home/popImages/pant.jpg'
 import shirt from '../assets/home/popImages/shirt.jpg'
 import tshirt from '../assets/home/popImages/tshirt1.jpg'
 import socks from '../assets/home/popImages/socks1.jpg'
+import polotshirt from '../assets/home/popImages/polotshirt.png'
 
 const dots = [
   { top: '8.7%', left: '12.6%', title: 'Cap', image: cap, redirectUrl: 'cap' },
@@ -18,7 +19,7 @@ const dots = [
   { top: '78.5%', left: '17.4%', title: 'Socks', image: socks, redirectUrl: 'socks' },
   { top: '74.5%', left: '47.15%', title: 'Bag', image: bag, redirectUrl: 'bag' },
   { top: '73.35%', left: '64.45%', title: 'Shirt', image: shirt, redirectUrl: 'shirt' },
-  { top: '71.1%', left: '88.73%', title: 'T-Shirt', image: tshirt, redirectUrl: 'tshirt' },
+  { top: '71.1%', left: '88.73%', title: 'Polo T-Shirt', image: polotshirt, redirectUrl: 'polo' },
 ]
 
 const ProductNavigator = ({onImageLoad}) => {

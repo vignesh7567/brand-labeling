@@ -61,5 +61,14 @@
         "colors": ["#D9D9D9", "#A9A9A9", "#1E1E1E", "#A6D6CA", "#FFFFFF", "#B9C1E8"],
         "sizes": ["XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"],
         "image": ["socks1", "socks2", "socks3", "socks4", "socks5"]
+    },
+    "polo": {
+        "id": 8,
+        "name": "ABSTRACT PRINT POLO TSHIRT",
+        "price": 99,
+        "description": "SINGLE JERSEY 100% COMBED RING-SPUN ORGANIC COTTON,PRE-WASHED.",
+        "colors": ["#D9D9D9", "#A9A9A9", "#1E1E1E", "#A6D6CA", "#FFFFFF", "#B9C1E8"],
+        "sizes": ["XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"],
+        "image": ["polo1", "polo2", "polo3", "polo4", "polo5"]
     }
 }

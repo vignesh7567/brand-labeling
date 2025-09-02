@@ -35,6 +35,11 @@ import socks2 from '../../assets/productDetails/socks/image2.jpg';
 import socks3 from '../../assets/productDetails/socks/image3.jpg';
 import socks4 from '../../assets/productDetails/socks/image4.jpg';
 import socks5 from '../../assets/productDetails/socks/image5.jpg';
+import polo1 from '../../assets/productDetails/polo/image1.jpg';
+import polo2 from '../../assets/productDetails/polo/image2.jpg';
+import polo3 from '../../assets/productDetails/polo/image3.jpg';
+import polo4 from '../../assets/productDetails/polo/image4.jpg';
+import polo5 from '../../assets/productDetails/polo/image5.jpg';
 
 const imageMap = {
   "tshirt1": tshirt1, 
@@ -71,7 +76,12 @@ const imageMap = {
   "socks2": socks2, 
   "socks3": socks3, 
   "socks4": socks4, 
-  "socks5": socks5
+  "socks5": socks5,
+  "polo1": polo1, 
+  "polo2": polo2, 
+  "polo3": polo3, 
+  "polo4": polo4, 
+  "polo5": polo5
 };
 
 const ProductImages = ({ images, onImageLoad }) => {

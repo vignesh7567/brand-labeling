@@ -16,7 +16,7 @@ const Footer = () => {
                     <img src={logo} className=' w-[140px] md:w-full object-contain' />
                 </div>
                 <div className=' flex gap-4 text-[28px] md:text-[40px]'>
-                    <Link target='_blank' className=' cursor-pointer'><FaInstagram /></Link>
+                    <Link target='_blank' to="https://www.instagram.com/brand.labellingde/?igsh=ZmJkOWNrN2hkcm5o&utm_source=qr#" className=' cursor-pointer'><FaInstagram /></Link>
                     <Link target='_blank' className=' cursor-pointer'><FaFacebookSquare /></Link>
                     <Link target='_blank' className=' cursor-pointer'><FaTwitter /></Link>
                 </div>
