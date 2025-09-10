@@ -13,7 +13,7 @@ import polotshirt from '../assets/home/popImages/polotshirt.png'
 
 const dots = [
   { top: '8.7%', left: '12.6%', title: 'Cap', image: cap, redirectUrl: 'cap' },
-  { top: '25.5%', left: '36.5%', title: 'T-Shirt', image: tshirt, redirectUrl: 'tshirt' },
+  { top: '25.5%', left: '36.5%', title: 'Anti Stain', image: tshirt, redirectUrl: 'tshirt' },
   { top: '10%', left: '63.5%', title: 'Benies', image: benies, redirectUrl: 'benies' },
   { top: '26.6%', left: '89%', title: 'Pant', image: pant, redirectUrl: 'pant' },
   { top: '78.5%', left: '17.4%', title: 'Socks', image: socks, redirectUrl: 'socks' },

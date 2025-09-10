@@ -1,10 +1,10 @@
 import React from 'react'
-import backPackImage from '../../assets/ourProducts/backpack.jpg'
+import backPackImage from '../../assets/ourProducts/backpack1.png'
 import tShirtImage from '../../assets/ourProducts/tshirt.jpg'
-import benCap from '../../assets/ourProducts/bencap.jpg'
-import caps from '../../assets/ourProducts/caps.jpg'
+import benCap from '../../assets/ourProducts/bencap1.png'
+import caps from '../../assets/ourProducts/caps1.png'
 import cargos from '../../assets/ourProducts/cargos.jpg'
-import shirt from '../../assets/ourProducts/shirt.jpg'
+import shirt from '../../assets/ourProducts/shirt1.png'
 import socks from '../../assets/ourProducts/socks.jpg'
 
 const OurProducts = () => {
