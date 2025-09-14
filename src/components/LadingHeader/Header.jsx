@@ -17,6 +17,7 @@ const Header = () => {
   const inputRef = useRef(null);
   const wrapperRef = useRef(null);
   const navigate = useNavigate();
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   useEffect(() => {
     if (showSearch && inputRef.current) {
