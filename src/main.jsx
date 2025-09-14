@@ -4,6 +4,7 @@ import './index.css'
 import { Toaster } from 'react-hot-toast';
 import { router } from './routes/index';
 import { RouterProvider } from 'react-router-dom';
+import './i18n';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

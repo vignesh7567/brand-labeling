@@ -4,8 +4,14 @@ import logo from '../../assets/logo/logo.jpg'
 import { Link, useNavigate } from 'react-router-dom'
 import { FaSearch } from "react-icons/fa";
 import { FaArrowCircleRight } from "react-icons/fa";
+import { useTranslation } from 'react-i18next';
 
 const Header = () => {
+  const { t, i18n } = useTranslation();
+  const handleLanguageChange = (lng) => {
+    i18n.changeLanguage(lng.target.value);
+  };
+
   const [showSearch, setShowSearch] = useState(false);
   const [search, setSearch] = useState('');
   const inputRef = useRef(null);
@@ -67,14 +73,14 @@ const Header = () => {
           <img src={logo} className='h-[36px] md:h-[50px]' alt="logo" />
         </div>
         <div className='hidden md:flex gap-[20px] md:gap-[24px] text-[14px] md:text-[19px]'>
-          <Link className='cursor-pointer'>Style</Link>
-          <Link className='cursor-pointer'>Gender</Link>
-          <Link className='cursor-pointer'>Fabric</Link>
-          <Link className='cursor-pointer'>Composition</Link>
-          <Link className='cursor-pointer'>Filters</Link>
+          <Link className='cursor-pointer'>{t('ladingheader_header_Style')}</Link>
+          <Link className='cursor-pointer'>{t('ladingheader_header_Gender')}</Link>
+          <Link className='cursor-pointer'>{t('ladingheader_header_Fabric')}</Link>
+          <Link className='cursor-pointer'>{t('ladingheader_header_Composition')}</Link>
+          <Link className='cursor-pointer'>{t('ladingheader_header_Filters')}</Link>
         </div>
       </div>
-      <div className=" flex items-center" ref={wrapperRef}>
+      <div className="flex items-center" ref={wrapperRef}>
         {!showSearch && (
           <FaSearch
             className='text-[20px] md:text-[24px] cursor-pointer'
@@ -102,8 +108,19 @@ const Header = () => {
             >
               <FaArrowCircleRight />
             </button>
+
           </div>
-        )}
+        )}     
+      </div>
+      <div>
+        <select
+          id="language-select"
+          value={i18n.language}
+          onChange={handleLanguageChange}
+          >
+           <option value="en" style={{ color: 'black' }}>EN</option>
+           <option value="de" style={{ color: 'black' }}>DE</option>
+        </select>
       </div>
     </div>
   )

@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
 import emailjs from 'emailjs-com'
 import { toast } from 'react-hot-toast'
+import { useTranslation } from 'react-i18next';
 
 const ContactUs = () => {
+  const { t } = useTranslation();
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phoneno, setPhoneno] = useState('');
@@ -43,27 +45,27 @@ const ContactUs = () => {
 
   return (
     <div className='flex flex-col justify-center items-center px-[16px] py-[60px] md:py-[130px]'>
-      <div className='flex justify-center items-center text-center text-[20px] md:text-[64px] font-[800] pb-[30px]'>CONTACT US</div>
+      <div className='flex justify-center items-center text-center text-[20px] md:text-[64px] font-[800] pb-[30px]'>{t('home_contactus_CONTACT_US')}</div>
       <div className='flex justify-center items-center bg-[#D9D9D9] rounded-2xl w-full md:w-[700px]'>
         <form className='flex flex-col gap-4 p-[20px] md:p-[50px] w-full' onSubmit={handleSubmit}>
           <div className='flex flex-col gap-1'>
-            <label className='text-[16px] md:text-[20px] font-[500]'>Name</label>
+            <label className='text-[16px] md:text-[20px] font-[500]'>{t('home_contactus_name')}</label>
             <input className='bg-white px-[6px] py-[10px] text-[14px] rounded-[6px]' type="text" name="name" required value={name} onChange={e => setName(e.target.value)} />
           </div>
           <div className='flex flex-col gap-1'>
-            <label className='text-[16px] md:text-[20px] font-[500]'>Email</label>
+            <label className='text-[16px] md:text-[20px] font-[500]'>{t('home_contactus_Email')}</label>
             <input className='bg-white px-[6px] py-[10px] text-[14px] rounded-[6px]' type="email" name="email" required value={email} onChange={e => setEmail(e.target.value)} />
           </div>
           <div className='flex flex-col gap-1'>
-            <label className='text-[16px] md:text-[20px] font-[500]'>Phone Number</label>
+            <label className='text-[16px] md:text-[20px] font-[500]'>{t('home_contactus_Phone_Number')}</label>
             <input className='bg-white px-[6px] py-[10px] text-[14px] rounded-[6px]' type="text" name="phoneno" required value={phoneno} onChange={e => setPhoneno(e.target.value)} />
           </div>
           <div className='flex flex-col gap-1'>
-            <label className='text-[16px] md:text-[20px] font-[500]'>Product Details</label>
+            <label className='text-[16px] md:text-[20px] font-[500]'>{t('home_contactus_Product_Details')}</label>
             <input className='bg-white px-[6px] py-[10px] text-[14px] rounded-[6px]' type="text" name="productDetails" required value={productDetails} onChange={e => setProductDetails(e.target.value)} />
           </div>
           <div className='flex flex-col gap-1'>
-            <label className='text-[16px] md:text-[20px] font-[500]'>Your Message</label>
+            <label className='text-[16px] md:text-[20px] font-[500]'>{t('home_contactus_Your_Message')}</label>
             <textarea className='bg-white p-[4px] text-[14px] rounded-[6px] min-h-[150px]' required value={message} onChange={e => setMessage(e.target.value)} />
           </div>
           <div className='flex justify-center items-center pt-[10px] md:pt-[20px]'>
@@ -72,7 +74,7 @@ const ContactUs = () => {
               className='bg-[#0081AE] text-white w-full md:w-[80%] py-[8px] md:py-[16px] cursor-pointer rounded-xl'
               disabled={loading}
             >
-              {loading ? 'Sending...' : 'Send Message'}
+              {loading ? t('home_contactus_sending') : t('home_contactus_Send_Message')}
             </button>
           </div>
         </form>

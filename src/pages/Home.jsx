@@ -10,10 +10,13 @@ import OurProducts from '../components/Home/OurProducts'
 import ContactUs from '../components/Home/ContactUs'
 import Footer from '../components/Footer/Footer'
 import ProductNavigatorsm from '../utils/ProductNavigatorsm'
+import { useTranslation } from 'react-i18next';
+
 
 const TOTAL_IMAGES = 4;
 
 const Home = () => {
+  const { t } = useTranslation();
   const [loadedImages, setLoadedImages] = useState(0);
 
   // Handler for all images
@@ -31,9 +34,9 @@ const Home = () => {
             <div className="w-5 h-10 bg-blue-300 rounded-md animate-bounce [animation-delay:400ms] shadow-lg"></div>
           </div>
           <div className="text-xl font-semibold text-blue-500 tracking-wide mb-2 animate-pulse">
-            Dressing up your experience...
+            {t('pagepages_home_dressings_home')}
           </div>
-          <div className="text-blue-400 text-sm">Please wait while we prepare your style</div>
+          <div className="text-blue-400 text-sm">{t('pages_home_pls_wait')}</div>
           <style>
             {`
               .animate-bounce {

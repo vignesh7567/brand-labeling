@@ -1,0 +1,74 @@
+{
+    "pant": {
+        "id": 1,
+        "name": "HOSE MIT ABSTRAKTEM PRINT",
+        "price": 99,
+        "description": "SINGLE JERSEY, 100 % GEKÄMMTE, RINGGESPONNENE BIO-BAUMWOLLE, VORGEWASCHEN.",
+        "colors": ["#D9D9D9", "#A9A9A9", "#1E1E1E", "#A6D6CA", "#FFFFFF", "#B9C1E8"],
+        "sizes": ["XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"],
+        "image": ["pant1", "pant2", "pant3", "pant4", "pant5"]
+    },
+    "shirt": {
+        "id": 2,
+        "name": "HEMD MIT ABSTRAKTEM PRINT",
+        "price": 99,
+        "description": "SINGLE JERSEY, 100 % GEKÄMMTE, RINGGESPONNENE BIO-BAUMWOLLE, VORGEWASCHEN.",
+        "colors": ["#D9D9D9", "#A9A9A9", "#1E1E1E", "#A6D6CA", "#FFFFFF", "#B9C1E8"],
+        "sizes": ["XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"],
+        "image": ["shirt1", "shirt2", "shirt3", "shirt4", "shirt5"]
+    },
+    "tshirt": {
+        "id": 3,
+        "name": "T-SHIRT MIT ABSTRAKTEM DRUCK",
+        "price": 99,
+        "description": "SINGLE JERSEY, 100 % GEKÄMMTE, RINGGESPONNENE BIO-BAUMWOLLE, VORGEWASCHEN.",
+        "colors": ["#D9D9D9", "#A9A9A9", "#1E1E1E", "#A6D6CA", "#FFFFFF", "#B9C1E8"],
+        "sizes": ["XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"],
+        "image": ["tshirt1", "tshirt2", "tshirt3", "tshirt4", "tshirt5"]
+    },
+    "cap": {
+        "id": 4,
+        "name": "KAPPE MIT ABSTRAKTEM DRUCK",
+        "price": 99,
+        "description": "SINGLE JERSEY, 100 % GEKÄMMTE, RINGGESPONNENE BIO-BAUMWOLLE, VORGEWASCHEN.",
+        "colors": ["#D9D9D9", "#A9A9A9", "#1E1E1E", "#A6D6CA", "#FFFFFF", "#B9C1E8"],
+        "sizes": ["XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"],
+        "image": ["cap1", "cap2", "cap3", "cap4", "cap5"]
+    },
+    "benies": {
+        "id": 5,
+        "name": "ABSTRAKTER DRUCK BENIES",
+        "price": 99,
+        "description": "SINGLE JERSEY, 100 % GEKÄMMTE, RINGGESPONNENE BIO-BAUMWOLLE, VORGEWASCHEN.",
+        "colors": ["#D9D9D9", "#A9A9A9", "#1E1E1E", "#A6D6CA", "#FFFFFF", "#B9C1E8"],
+        "sizes": ["XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"],
+        "image": ["benies1", "benies2", "benies3", "benies4", "benies5"]
+    },
+    "bag": {
+        "id": 6,
+        "name": "TASCHE MIT ABSTRAKTEM DRUCK",
+        "price": 99,
+        "description": "SINGLE JERSEY, 100 % GEKÄMMTE, RINGGESPONNENE BIO-BAUMWOLLE, VORGEWASCHEN.",
+        "colors": ["#D9D9D9", "#A9A9A9", "#1E1E1E", "#A6D6CA", "#FFFFFF", "#B9C1E8"],
+        "sizes": ["XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"],
+        "image": ["bag1", "bag2", "bag3", "bag4", "bag5"]
+    },
+    "socks": {
+        "id": 7,
+        "name": "SOCKEN MIT ABSTRAKTEM PRINT",
+        "price": 99,
+        "description": "SINGLE JERSEY, 100 % GEKÄMMTE, RINGGESPONNENE BIO-BAUMWOLLE, VORGEWASCHEN.",
+        "colors": ["#D9D9D9", "#A9A9A9", "#1E1E1E", "#A6D6CA", "#FFFFFF", "#B9C1E8"],
+        "sizes": ["XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"],
+        "image": ["socks1", "socks2", "socks3", "socks4", "socks5"]
+    },
+    "polo": {
+        "id": 8,
+        "name": "POLOSHIRT MIT ABSTRAKTEM PRINT",
+        "price": 99,
+        "description": "SINGLE JERSEY, 100 % GEKÄMMTE, RINGGESPONNENE BIO-BAUMWOLLE, VORGEWASCHEN.",
+        "colors": ["#D9D9D9", "#A9A9A9", "#1E1E1E", "#A6D6CA", "#FFFFFF", "#B9C1E8"],
+        "sizes": ["XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"],
+        "image": ["polo1", "polo2", "polo3", "polo4", "polo5"]
+    }
+}
