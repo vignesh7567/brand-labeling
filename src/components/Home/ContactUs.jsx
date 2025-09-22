@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import emailjs from 'emailjs-com'
 import { toast } from 'react-hot-toast'
 import { useTranslation } from 'react-i18next';
@@ -14,6 +14,7 @@ const ContactUs = () => {
   const [loading, setLoading] = useState(false);
 
   const [captchaVerified, setCaptchaVerified] = useState(false);
+  const recaptchaRef = useRef(null);
 
   const handleCaptchaChange = (value) => {
     // console.log("Captcha value:", value);
@@ -81,6 +82,7 @@ const ContactUs = () => {
           </div>
           <div className='flex justify-center'>
             <ReCAPTCHA
+              ref={recaptchaRef}
               sitekey="6LfBuNErAAAAAPr-9vu4x6iYZK_QIkk3JyiuHO06"
               onChange={handleCaptchaChange}
             />
