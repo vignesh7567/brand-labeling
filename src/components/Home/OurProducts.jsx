@@ -6,11 +6,13 @@ import caps from '../../assets/ourProducts/caps1.png'
 import cargos from '../../assets/ourProducts/cargos.jpg'
 import shirt from '../../assets/ourProducts/shirt1.png'
 import socks from '../../assets/ourProducts/socks.jpg'
+import { useTranslation } from 'react-i18next';
 
 const OurProducts = () => {
+    const { t } = useTranslation();
   return (
     <div className=' flex flex-col items-center justify-center px-[13px] py-[36px] md:py-[130px]'>
-      <div className=' text-[20px] md:text-[64px] font-[800] pb-[20px] md:pb-[80px]'>OUR PRODUCTS</div>
+      <div className=' text-[20px] md:text-[64px] font-[800] pb-[20px] md:pb-[80px]'>{t('home_ourproducts_OURPRODUCTS')}</div>
       <div className=' hidden md:flex flex-col gap-4'>
         <div className=' flex gap-4'>
             <div><img src={backPackImage} className=' object-contain' /></div>

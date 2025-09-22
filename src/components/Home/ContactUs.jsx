@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import emailjs from 'emailjs-com'
 import { toast } from 'react-hot-toast'
 import { useTranslation } from 'react-i18next';
+import ReCAPTCHA from "react-google-recaptcha";
 
 const ContactUs = () => {
   const { t } = useTranslation();
@@ -11,6 +12,16 @@ const ContactUs = () => {
   const [productDetails, setProductDetails] = useState('');
   const [message, setMessage] = useState('');
   const [loading, setLoading] = useState(false);
+
+  const [captchaVerified, setCaptchaVerified] = useState(false);
+
+  const handleCaptchaChange = (value) => {
+    // console.log("Captcha value:", value);
+    if (value) {
+      setCaptchaVerified(true);
+    }
+  };
+
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -68,11 +79,19 @@ const ContactUs = () => {
             <label className='text-[16px] md:text-[20px] font-[500]'>{t('home_contactus_Your_Message')}</label>
             <textarea className='bg-white p-[4px] text-[14px] rounded-[6px] min-h-[150px]' required value={message} onChange={e => setMessage(e.target.value)} />
           </div>
+          <div className='flex justify-center'>
+            <ReCAPTCHA
+              sitekey="6LfBuNErAAAAAPr-9vu4x6iYZK_QIkk3JyiuHO06"
+              onChange={handleCaptchaChange}
+            />
+          </div>
+
           <div className='flex justify-center items-center pt-[10px] md:pt-[20px]'>
             <button
               type='submit'
-              className='bg-[#0081AE] text-white w-full md:w-[80%] py-[8px] md:py-[16px] cursor-pointer rounded-xl'
-              disabled={loading}
+              className={`bg-[#0081AE] text-white w-full md:w-[80%] py-[8px] md:py-[16px] rounded-xl transition duration-300 
+                ${(!captchaVerified || loading) ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer'}`}
+              disabled={!captchaVerified || loading}
             >
               {loading ? t('home_contactus_sending') : t('home_contactus_Send_Message')}
             </button>
