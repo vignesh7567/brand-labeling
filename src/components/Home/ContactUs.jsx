@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState, useRef } from 'react'
 import emailjs from 'emailjs-com'
 import { toast } from 'react-hot-toast'
 import { useTranslation } from 'react-i18next';
@@ -15,30 +15,7 @@ const ContactUs = () => {
 
   const [captchaVerified, setCaptchaVerified] = useState(false);
   const recaptchaRef = useRef(null);
-  // Math CAPTCHA
-  const [num1, setNum1] = useState(0);
-  const [num2, setNum2] = useState(0);
-  const [captchaAnswer, setCaptchaAnswer] = useState('');
-  const [isMathCaptchaValid, setIsMathCaptchaValid] = useState(false);
-  useEffect(() => {
-    generateMathCaptcha();
-  }, []);
-
-  const generateMathCaptcha = () => {
-    const a = Math.floor(Math.random() * 10);
-    const b = Math.floor(Math.random() * 10);
-    setNum1(a);
-    setNum2(b);
-    setCaptchaAnswer('');
-    setIsMathCaptchaValid(false);
-  };
-
-  const handleMathCaptchaChange = (e) => {
-    const value = e.target.value;
-    setCaptchaAnswer(value);
-    setIsMathCaptchaValid(parseInt(value) === num1 + num2);
-  };
-
+  
   const handleCaptchaChange = (value) => {
     // console.log("Captcha value:", value);
     if (value) {
@@ -46,10 +23,9 @@ const ContactUs = () => {
     }
   };
 
-
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!captchaVerified || !isMathCaptchaValid) {
+    if (!captchaVerified) {
       toast.error("Please complete both CAPTCHA challenges.");
       return;
     }
@@ -77,7 +53,6 @@ const ContactUs = () => {
       setMessage('');
       recaptchaRef.current?.reset();        // Reset Google CAPTCHA
       setCaptchaVerified(false);            // Disable until solved again
-      generateMathCaptcha();                // New math question
     })
     .catch(() => {
       toast.error("Failed to send message.");
@@ -111,20 +86,6 @@ const ContactUs = () => {
             <textarea className='bg-white p-[4px] text-[14px] rounded-[6px] min-h-[150px]' required value={message} onChange={e => setMessage(e.target.value)} />
           </div>
 
-           {/* Math CAPTCHA */}
-          <div className='flex flex-col gap-1'>
-            <label className='text-[16px] md:text-[20px] font-[500]'>
-              Solve: {num1} + {num2} = ?
-            </label>
-            <input
-              className='bg-white px-[6px] py-[10px] text-[14px] rounded-[6px]'
-              type="number"
-              value={captchaAnswer}
-              onChange={handleMathCaptchaChange}
-              required
-            />
-          </div>
-
           <div className='flex justify-center'>
             <ReCAPTCHA
               ref={recaptchaRef}
@@ -137,8 +98,8 @@ const ContactUs = () => {
             <button
               type='submit'
               className={`bg-[#0081AE] text-white w-full md:w-[80%] py-[8px] md:py-[16px] rounded-xl transition duration-300 
-                ${(!captchaVerified || !isMathCaptchaValid || loading) ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer'}`}
-              disabled={!captchaVerified || !isMathCaptchaValid || loading}
+                ${(!captchaVerified || loading) ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer'}`}
+              disabled={!captchaVerified || loading}
             >
               {loading ? t('home_contactus_sending') : t('home_contactus_Send_Message')}
             </button>
