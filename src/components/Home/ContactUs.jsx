@@ -15,6 +15,7 @@ const ContactUs = () => {
 
   const [captchaVerified, setCaptchaVerified] = useState(false);
   const recaptchaRef = useRef(null);
+  const siteKey = process.env.REACT_APP_RECAPTCHA_SITE_KEY;
   
   const handleCaptchaChange = (value) => {
     // console.log("Captcha value:", value);
@@ -89,7 +90,7 @@ const ContactUs = () => {
           <div className='flex justify-center'>
             <ReCAPTCHA
               ref={recaptchaRef}
-              sitekey="6LfBuNErAAAAAPr-9vu4x6iYZK_QIkk3JyiuHO06"
+              sitekey={siteKey}
               onChange={handleCaptchaChange}
             />
           </div>
