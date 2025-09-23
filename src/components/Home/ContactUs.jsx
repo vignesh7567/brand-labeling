@@ -3,6 +3,8 @@ import emailjs from 'emailjs-com'
 import { toast } from 'react-hot-toast'
 import { useTranslation } from 'react-i18next';
 import ReCAPTCHA from "react-google-recaptcha";
+import.meta.env.VITE_RECAPTCHA_SITE_KEY
+
 
 const ContactUs = () => {
   const { t } = useTranslation();
@@ -15,7 +17,6 @@ const ContactUs = () => {
 
   const [captchaVerified, setCaptchaVerified] = useState(false);
   const recaptchaRef = useRef(null);
-  const siteKey = process.env.REACT_APP_RECAPTCHA_SITE_KEY;
   
   const handleCaptchaChange = (value) => {
     // console.log("Captcha value:", value);
@@ -90,7 +91,7 @@ const ContactUs = () => {
           <div className='flex justify-center'>
             <ReCAPTCHA
               ref={recaptchaRef}
-              sitekey={siteKey}
+              sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
               onChange={handleCaptchaChange}
             />
           </div>
