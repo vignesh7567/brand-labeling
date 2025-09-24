@@ -81,6 +81,9 @@ const Header = () => {
           <Link className='cursor-pointer'>{t('ladingheader_header_Filters')}</Link>
         </div>
       </div>
+      <div>
+        <a href="/docs/guide.pdf" download>{t('ladingheader_header_Download')}</a>
+      </div>
       <div className="flex items-center" ref={wrapperRef}>
         {!showSearch && (
           <FaSearch
