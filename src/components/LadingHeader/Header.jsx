@@ -7,7 +7,7 @@ import { useTranslation } from 'react-i18next';
 
 const downloads = {
   en: [
-    { name: 'Master Catalogue', filename: '/en/EN_Master_catalogs.pdf' },
+    { name: 'Master Catalogue', filename: '/en/EN_Master_catalog.pdf' },
     { name: 'T-Shirts', filename: '/en/EN_Tshirts_catalog.pdf' },
     { name: 'Beanie and Caps', filename: '/en/EN_Beanie_and_Caps_catalog.pdf' },
     { name: 'Bedsheets', filename: '/en/EN_Bedsheets_catalog.pdf' },
@@ -16,7 +16,7 @@ const downloads = {
     { name: 'Socks', filename: '/en/EN_Socks_Catalog.pdf' },
   ],
   de: [
-    { name: 'Hauptkatalog', filename: '/de/DE_Master_catalogs.pdf' },
+    { name: 'Hauptkatalog', filename: '/de/DE_Master_catalog.pdf' },
     { name: 'T-Shirts', filename: '/de/DE_Tshirts_catalog.pdf' },
     { name: 'Beanie und Caps', filename: '/de/DE_Beanies_and_Caps_catalog.pdf' },
     { name: 'Bettwäsche', filename: '/de/DE_Bedsheets_catalog.pdf' },
