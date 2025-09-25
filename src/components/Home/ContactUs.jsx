@@ -42,6 +42,7 @@ const ContactUs = () => {
         phone: phoneno,
         product_details: productDetails,
         message: message,
+        to_email: "info@brandlabelling.de"
       },
       "mq1VG-mzLO5X7c3wM"
     )

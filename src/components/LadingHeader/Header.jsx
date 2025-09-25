@@ -131,11 +131,11 @@ const Header = () => {
 
           {/* Desktop nav */}
           <div className='hidden md:flex gap-[20px] md:gap-[24px] text-[14px] md:text-[19px] items-center'>
-            <Link className='cursor-pointer'>{t('ladingheader_header_Style')}</Link>
+            {/* <Link className='cursor-pointer'>{t('ladingheader_header_Style')}</Link>
             <Link className='cursor-pointer'>{t('ladingheader_header_Gender')}</Link>
             <Link className='cursor-pointer'>{t('ladingheader_header_Fabric')}</Link>
             <Link className='cursor-pointer'>{t('ladingheader_header_Composition')}</Link>
-            <Link className='cursor-pointer'>{t('ladingheader_header_Filters')}</Link>
+            <Link className='cursor-pointer'>{t('ladingheader_header_Filters')}</Link> */}
 
             {/* Catalogue desktop dropdown */}
             <div className='relative' ref={catalogueRef}>
@@ -151,7 +151,7 @@ const Header = () => {
               {showCatalogue && (
                 <div
                   role="menu"
-                  className="absolute right-0 mt-2 w-[280px] bg-white text-black rounded-md shadow-lg z-50 overflow-hidden"
+                  className="absolute left-0 mt-2 w-[280px] bg-white text-black rounded-md shadow-lg z-50 overflow-hidden"
                 >
                   <ul>
                     {catalogueItems.length === 0 && (
@@ -294,11 +294,11 @@ const Header = () => {
 
             {/* nav links */}
             <nav className='flex flex-col gap-2'>
-              <Link onClick={() => setMobileOpen(false)} className='py-2 px-2 rounded hover:bg-gray-100'>{t('ladingheader_header_Style')}</Link>
+              {/* <Link onClick={() => setMobileOpen(false)} className='py-2 px-2 rounded hover:bg-gray-100'>{t('ladingheader_header_Style')}</Link>
               <Link onClick={() => setMobileOpen(false)} className='py-2 px-2 rounded hover:bg-gray-100'>{t('ladingheader_header_Gender')}</Link>
               <Link onClick={() => setMobileOpen(false)} className='py-2 px-2 rounded hover:bg-gray-100'>{t('ladingheader_header_Fabric')}</Link>
               <Link onClick={() => setMobileOpen(false)} className='py-2 px-2 rounded hover:bg-gray-100'>{t('ladingheader_header_Composition')}</Link>
-              <Link onClick={() => setMobileOpen(false)} className='py-2 px-2 rounded hover:bg-gray-100'>{t('ladingheader_header_Filters')}</Link>
+              <Link onClick={() => setMobileOpen(false)} className='py-2 px-2 rounded hover:bg-gray-100'>{t('ladingheader_header_Filters')}</Link> */}
             </nav>
 
             {/* Mobile Catalogue accordion */}
