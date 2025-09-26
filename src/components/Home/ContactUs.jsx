@@ -111,7 +111,7 @@ export default function ContactUs() {
     const pasted = e.clipboardData.getData("text");
     if (!/^\d+$/.test(pasted)) {
       e.preventDefault();
-      setPhoneError(t ? t("home_contactus_phone_numbers_only") : "Enter only numbers");
+      setPhoneError(t("home_contactus_phone_numbers_only"));
       // optionally show the cleaned version:
       const cleaned = pasted.replace(/\D+/g, "");
       if (cleaned) {
@@ -188,13 +188,13 @@ export default function ContactUs() {
     if (loading) return;
 
     if (!captchaToken) {
-      toast.error(t ? t("home_contactus_complete_captcha") : "Please complete the CAPTCHA.");
+      toast.error(t("home_contactus_complete_captcha"));
       return;
     }
 
     const ok = validateAllBeforeSubmit();
     if (!ok) {
-      toast.error(t ? t("home_contactus_fix_errors") : "Please fix the errors before submitting.");
+      toast.error(t("home_contactus_fix_errors"));
       // focus first field with error
       const firstErrorField = document.querySelector("[aria-invalid='true']");
       if (firstErrorField) firstErrorField.focus();
@@ -218,11 +218,11 @@ export default function ContactUs() {
       } else {
         await emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY);
       }
-      toast.success(t ? t("home_contactus_message_sent") : "Message sent!");
+      toast.success(t("home_contactus_message_sent"));
       resetForm();
     } catch (err) {
       console.error("EmailJS send error:", err);
-      toast.error(t ? t("home_contactus_send_failed") : "Failed to send message.");
+      toast.error(t("home_contactus_send_failed"));
     } finally {
       setLoading(false);
     }

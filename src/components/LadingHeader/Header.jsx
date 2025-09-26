@@ -7,22 +7,22 @@ import { useTranslation } from 'react-i18next';
 
 const downloads = {
   en: [
-    { name: 'Master Catalogue', filename: '/docs/en/EN_Master_catalog.pdf' },
-    { name: 'T-Shirts', filename: '/docs/en/EN_Tshirts_catalog.pdf' },
-    { name: 'Beanie and Caps', filename: '/docs/en/EN_Beanie_and_Caps_catalog.pdf' },
-    { name: 'Bedsheets', filename: '/docs/en/EN_Bedsheets_catalog.pdf' },
-    { name: 'Hoodies', filename: '/docs/en/EN_Hoodies_catalog.pdf' },
-    { name: 'Shorts and Pants', filename: '/docs/en/EN_Shorts_and_Pants_catalog.pdf' },
-    { name: 'Socks', filename: '/docs/en/EN_Socks_Catalog.pdf' },
+    { name: 'Master Catalogue', filename: 'https://brandlabelling.de/docs/en/EN_Master_catalog.pdf' },
+    { name: 'T-Shirts', filename: 'https://brandlabelling.de/docs/en/EN_Tshirts_catalog.pdf' },
+    { name: 'Beanie and Caps', filename: 'https://brandlabelling.de/docs/en/EN_Beanie_and_Caps_catalog.pdf' },
+    { name: 'Bedsheets', filename: 'https://brandlabelling.de/docs/en/EN_Bedsheets_catalog.pdf' },
+    { name: 'Hoodies', filename: 'https://brandlabelling.de/docs/en/EN_Hoodies_catalog.pdf' },
+    { name: 'Shorts and Pants', filename: 'https://brandlabelling.de/docs/en/EN_Shorts_and_Pants_catalog.pdf' },
+    { name: 'Socks', filename: 'https://brandlabelling.de/docs/en/EN_Socks_Catalog.pdf' },
   ],
   de: [
-    { name: 'Hauptkatalog', filename: '/docs/de/DE_Master_catalog.pdf' },
-    { name: 'T-Shirts', filename: '/docs/de/DE_Tshirts_catalog.pdf' },
-    { name: 'Beanie und Caps', filename: '/docs/de/DE_Beanies_and_Caps_catalog.pdf' },
-    { name: 'Bettwäsche', filename: '/docs/de/DE_Bedsheets_catalog.pdf' },
-    { name: 'Kapuzenpullis', filename: '/docs/de/DE_Hoodies_catalog.pdf' },
-    { name: 'Shorts und Hosen', filename: '/docs/de/DE_Shorts_and_Pants_catalog.pdf' },
-    { name: 'Socken', filename: '/docs/de/DE_Socks_catalog.pdf' },
+    { name: 'Hauptkatalog', filename: 'https://brandlabelling.de/docs/de/DE_Master_catalog.pdf' },
+    { name: 'T-Shirts', filename: 'https://brandlabelling.de/docs/de/DE_Tshirts_catalog.pdf' },
+    { name: 'Beanie und Caps', filename: 'https://brandlabelling.de/docs/de/DE_Beanies_and_Caps_catalog.pdf' },
+    { name: 'Bettwäsche', filename: 'https://brandlabelling.de/docs/de/DE_Bedsheets_catalog.pdf' },
+    { name: 'Kapuzenpullis', filename: 'https://brandlabelling.de/docs/de/DE_Hoodies_catalog.pdf' },
+    { name: 'Shorts und Hosen', filename: 'https://brandlabelling.de/docs/de/DE_Shorts_and_Pants_catalog.pdf' },
+    { name: 'Socken', filename: 'https://brandlabelling.de/docs/de/DE_Socks_catalog.pdf' },
   ]
 };
 
