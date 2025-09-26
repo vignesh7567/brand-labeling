@@ -45,33 +45,33 @@ export default function ContactUs() {
 
   // Real-time validators
   const validateName = (val) => {
-    if (!val.trim()) return t ? t("home_contactus_name_required") : "Name is required";
-    if (val.trim().length < 2) return t ? t("home_contactus_name_too_short") : "Name too short";
+    if (!val.trim()) return t("home_contactus_name_required");
+    if (val.trim().length < 2) return t("home_contactus_name_too_short");
     return "";
   };
 
   const validateEmail = (val) => {
-    if (!val.trim()) return t ? t("home_contactus_valid_email_required") : "Email is required";
-    if (!emailRegex.test(val)) return t ? t("home_contactus_valid_email") : "Enter a valid email";
+    if (!val.trim()) return t("home_contactus_valid_email_required");
+    if (!emailRegex.test(val)) return t("home_contactus_valid_email");
     return "";
   };
 
   // Phone accepts digits only for this UX; we will block non-digit keystrokes and show errors on paste
   const validatePhone = (val) => {
-    if (!val.trim()) return t ? t("home_contactus_phone_required") : "Phone is required";
-    if (!/^\d+$/.test(val)) return t ? t("home_contactus_phone_numbers_only") : "Enter only numbers";
-    if (val.trim().length < minPhoneLength) return t ? t("home_contactus_phone_too_short") : `Phone must be at least ${minPhoneLength} digits`;
+    if (!val.trim()) return t("home_contactus_phone_required");
+    if (!/^\d+$/.test(val)) return t("home_contactus_phone_numbers_only");
+    if (val.trim().length < minPhoneLength) return `Phone must be at least ${minPhoneLength} digits`;
     return "";
   };
 
   const validateProduct = (val) => {
-    if (!val.trim()) return t ? t("home_contactus_product_details_required") : "Product details required";
+    if (!val.trim()) return t("home_contactus_product_details_required");
     return "";
   };
 
   const validateMessage = (val) => {
-    if (!val.trim()) return t ? t("home_contactus_message_required") : "Message required";
-    if (val.trim().length < 10) return t ? t("home_contactus_message_too_short") : "Message is too short";
+    if (!val.trim()) return t("home_contactus_message_required");
+    if (val.trim().length < 10) return t("home_contactus_message_too_short");
     return "";
   };
 
