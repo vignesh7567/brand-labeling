@@ -18,7 +18,7 @@ const { t } = useTranslation();
                     <img src={logo} className=' w-[140px] md:w-full object-contain' />
                 </div>
                 <div className=' flex gap-4 text-[28px] md:text-[40px]'>
-                    <Link target='_blank' to="https://www.instagram.com/brand.labellingde/?igsh=ZmJkOWNrN2hkcm5o&utm_source=qr#" className=' cursor-pointer'><FaInstagram /></Link>
+                    <Link target='_blank' to="" className=' cursor-pointer'><FaInstagram /></Link>
                     <Link target='_blank' className=' cursor-pointer'><FaFacebookSquare /></Link>
                     <Link target='_blank' className=' cursor-pointer'><FaTwitter /></Link>
                 </div>
@@ -27,7 +27,7 @@ const { t } = useTranslation();
                 <div className=' text-[16px] md:text-[24px] font-[600]'>{t('footer_footer_address')}</div>
                 <div className=' flex gap-2 text-[14px] md:text-[20px]'>
                     <div className=' pt-1.5'><FaLocationDot /></div>
-                    <div className=' w-[340px]'>18, Admiral-Scheer-Str, Essen, North Rhine - Westphalia (NRW), 45128, Germany</div>
+                    <div className=' w-[340px]'>address</div>
                 </div>
             </div>
             <div className='flex flex-col gap-2'>
@@ -40,8 +40,8 @@ const { t } = useTranslation();
             <div className='flex flex-col gap-2'>
                 <div className=' text-[16px] md:text-[24px] font-[600]'>{t('footer_footer_contact')}</div>
                 <div className=' flex flex-col gap-2 text-[14px] md:text-[20px]'>
-                    <p>{t('footer_footer_email')} info@brandlabelling.de</p>
-                    <p>{t('footer_footer_phone')} +49 15214149340</p>
+                    <p>{t('footer_footer_email')} your email</p>
+                    <p>{t('footer_footer_phone')} your mobile</p>
                 </div>
             </div>
         </div>

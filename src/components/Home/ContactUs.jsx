@@ -3,12 +3,10 @@ import React, { useState, useRef, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-hot-toast";
 import { useTranslation } from "react-i18next";
-import ReCAPTCHA from "react-google-recaptcha";
 
 const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
 const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
 const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
-const RECAPTCHA_KEY = import.meta.env.VITE_RECAPTCHA_SITE_KEY;
 
 const emailRegex = /^\S+@\S+\.\S+$/;
 const minPhoneLength = 7; // adjust if necessary
@@ -29,9 +27,6 @@ export default function ContactUs() {
   const [phoneError, setPhoneError] = useState("");
   const [productError, setProductError] = useState("");
   const [messageError, setMessageError] = useState("");
-
-  const [captchaToken, setCaptchaToken] = useState(null);
-  const recaptchaRef = useRef(null);
 
   useEffect(() => {
     if (PUBLIC_KEY) {
@@ -135,10 +130,6 @@ export default function ContactUs() {
     setMessageError(validateMessage(val));
   };
 
-  const handleCaptchaChange = (token) => {
-    setCaptchaToken(token || null);
-  };
-
   const anyErrors = () => {
     return (
       !!nameError ||
@@ -177,22 +168,13 @@ export default function ContactUs() {
     setPhoneError("");
     setProductError("");
     setMessageError("");
-    if (recaptchaRef.current) {
-      try { recaptchaRef.current.reset(); } catch (err) { /* ignore */ }
-    }
-    setCaptchaToken(null);
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (loading) return;
 
-    if (!captchaToken) {
-      toast.error(t("home_contactus_complete_captcha"));
-      return;
-    }
-
-    const ok = validateAllBeforeSubmit();
+  const ok = validateAllBeforeSubmit();
     if (!ok) {
       toast.error(t("home_contactus_fix_errors"));
       // focus first field with error
@@ -207,9 +189,7 @@ export default function ContactUs() {
       from_email: email,
       phone: phoneno,
       product_details: productDetails,
-      message,
-      recaptcha_token: captchaToken,
-      to_email: "info@brandlabelling.de",
+      message
     };
 
     try {
@@ -321,23 +301,14 @@ export default function ContactUs() {
             {messageError && <p id="message-error" className="text-red-600 text-sm mt-1">{messageError}</p>}
           </div>
 
-          {/* reCAPTCHA */}
-          <div className="flex justify-center">
-            <ReCAPTCHA
-              ref={recaptchaRef}
-              sitekey={RECAPTCHA_KEY}
-              onChange={handleCaptchaChange}
-            />
-          </div>
-
           {/* Submit */}
           <div className="flex justify-center items-center pt-[10px] md:pt-[20px]">
             <button
               type="submit"
               className={`bg-[#0081AE] text-white w-full md:w-[80%] py-[8px] md:py-[16px] rounded-xl transition duration-300 
-                ${(loading || anyErrors() || !captchaToken) ? "opacity-50 cursor-not-allowed" : "cursor-pointer"}`}
-              disabled={loading || anyErrors() || !captchaToken}
-              aria-disabled={loading || anyErrors() || !captchaToken}
+                ${(loading || anyErrors()) ? "opacity-50 cursor-not-allowed" : "cursor-pointer"}`}
+              disabled={loading || anyErrors()}
+              aria-disabled={loading || anyErrors()}
             >
               {loading ? t("home_contactus_sending") : t("home_contactus_Send_Message")}
             </button>

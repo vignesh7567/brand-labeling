@@ -7,22 +7,22 @@ import { useTranslation } from 'react-i18next';
 
 const downloads = {
   en: [
-    { name: 'Master Catalogue', filename: 'https://pub-6aa4c0706c4640bcaac3dc7fbda21e6a.r2.dev/docs/en/EN_Master_catalog.pdf' },
-    { name: 'T-Shirts', filename: 'https://pub-6aa4c0706c4640bcaac3dc7fbda21e6a.r2.dev/docs/en/EN_Tshirts_catalog.pdf' },
-    { name: 'Beanie and Caps', filename: 'https://pub-6aa4c0706c4640bcaac3dc7fbda21e6a.r2.dev/docs/en/EN_Beanie_and_Caps_catalog.pdf' },
-    { name: 'Bedsheets', filename: 'https://pub-6aa4c0706c4640bcaac3dc7fbda21e6a.r2.dev/docs/en/EN_Bedsheets_catalog.pdf' },
-    { name: 'Hoodies', filename: 'https://pub-6aa4c0706c4640bcaac3dc7fbda21e6a.r2.dev/docs/en/EN_Hoodies_catalog.pdf' },
-    { name: 'Shorts and Pants', filename: 'https://pub-6aa4c0706c4640bcaac3dc7fbda21e6a.r2.dev/docs/en/EN_Shorts_and_Pants_catalog.pdf' },
-    { name: 'Socks', filename: 'https://pub-6aa4c0706c4640bcaac3dc7fbda21e6a.r2.dev/docs/en/EN_Socks_Catalog.pdf' },
+    { name: 'Master Catalogue', filename: '' },
+    { name: 'T-Shirts', filename: '' },
+    { name: 'Beanie and Caps', filename: '' },
+    { name: 'Bedsheets', filename: '' },
+    { name: 'Hoodies', filename: '' },
+    { name: 'Shorts and Pants', filename: '' },
+    { name: 'Socks', filename: '' },
   ],
   de: [
-    { name: 'Hauptkatalog', filename: 'https://pub-6aa4c0706c4640bcaac3dc7fbda21e6a.r2.dev/docs/de/DE_Master_catalog.pdf' },
-    { name: 'T-Shirts', filename: 'https://pub-6aa4c0706c4640bcaac3dc7fbda21e6a.r2.dev/docs/de/DE_Tshirts_catalog.pdf' },
-    { name: 'Beanie und Caps', filename: 'https://pub-6aa4c0706c4640bcaac3dc7fbda21e6a.r2.dev/docs/de/DE_Beanies_and_Caps_catalog.pdf' },
-    { name: 'Bettwäsche', filename: 'https://pub-6aa4c0706c4640bcaac3dc7fbda21e6a.r2.dev/docs/de/DE_Bedsheets_catalog.pdf' },
-    { name: 'Kapuzenpullis', filename: 'https://pub-6aa4c0706c4640bcaac3dc7fbda21e6a.r2.dev/docs/de/DE_Hoodies_catalog.pdf' },
-    { name: 'Shorts und Hosen', filename: 'https://pub-6aa4c0706c4640bcaac3dc7fbda21e6a.r2.dev/docs/de/DE_Shorts_and_Pants_catalog.pdf' },
-    { name: 'Socken', filename: 'https://pub-6aa4c0706c4640bcaac3dc7fbda21e6a.r2.dev/docs/de/DE_Socks_catalog.pdf' },
+    { name: 'Hauptkatalog', filename: '' },
+    { name: 'T-Shirts', filename: '' },
+    { name: 'Beanie und Caps', filename: '' },
+    { name: 'Bettwäsche', filename: '' },
+    { name: 'Kapuzenpullis', filename: '' },
+    { name: 'Shorts und Hosen', filename: '' },
+    { name: 'Socken', filename: '' },
   ]
 };
 
