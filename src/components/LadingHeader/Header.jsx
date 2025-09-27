@@ -333,10 +333,10 @@ const Header = () => {
             </div>
 
             {/* optional: other quick links */}
-            <div className='pt-4 border-t'>
+            {/* <div className='pt-4 border-t'>
               <a href="/contact" onClick={() => setMobileOpen(false)} className='block py-2'>Contact</a>
               <a href="/about" onClick={() => setMobileOpen(false)} className='block py-2'>About</a>
-            </div>
+            </div> */}
           </div>
         </aside>
       </div>
